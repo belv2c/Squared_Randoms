@@ -5,11 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-
-// With the resulting List, populate a new List that contains each number squared.For example, if the original list is 2, 5, 3, 15, the final list will be 4, 25, 9, 225.
-// Then remove any number that is odd from the list of squared numbers.
-
-
 namespace Squared_Randoms
 {
     class Program
@@ -37,21 +32,8 @@ namespace Squared_Randoms
                     squaredNumbers.Add(number * number);
                 }
                
-             foreach (int number in squaredNumbers)
-                {
-                    Console.WriteLine($"Squared number:" + number);
-                    Console.ReadLine();
-                }
-
+            // removes all odd numbers from the squaredNumbers list
                 squaredNumbers.RemoveAll(i => i % 2 == 1);
-
-                foreach (int number in squaredNumbers)
-                {
-                    Console.WriteLine($"Even numbers:" + number);
-                    Console.ReadLine();
-
-
-                }
             }
         }
     }
